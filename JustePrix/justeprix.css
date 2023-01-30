@@ -1,0 +1,78 @@
+body{
+    max-width: 500px;
+    margin:auto;
+    background-color: goldenrod;
+}
+
+.JustePrixTitle{
+    font-size: 80px;
+    font-weight: bold;
+    color: rgba(2, 2, 81, 0.84); 
+    text-align: center;
+    text-decoration: overline underline;
+}
+.JustePrixImage{
+    width:350px;
+    max-height:350px;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#beginGame{
+    background-color: rgba(2, 2, 81, 0.84);
+    padding: 15px;
+    border-radius: 17px;
+    font-size: 18px;
+    font-weight: bold;
+    color: goldenrod;
+    display: flex;
+}
+.JustePrixPropal{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(2, 2, 81, 0.84);
+}
+#checkPropalButton{
+    background-color: rgba(2, 2, 81, 0.84);
+    padding: 5px;
+    border-radius: 15px;
+    color: goldenrod;
+}
+
+.reboursDiv{
+    transition: 0.2s;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.reboursDiv.cool{
+    color: green;
+}
+.reboursDiv.warning{
+    color: orange;
+}
+.reboursDiv.danger{
+    color: red;
+    animation : suspens 1s infinite;
+}
+
+#GamePropalDiv{
+    display: none;
+}
+@keyframes suspens {
+    0%, 100%{
+        transform: rotate(0deg);
+        font-size: 20px;
+    }
+    33%{
+        transform: rotate(-30deg);
+        font-size: 23px;
+
+    }
+    66%{
+        transform: rotate(30deg);
+        font-size: 23px;
+
+    }
+}
